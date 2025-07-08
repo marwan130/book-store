@@ -1,4 +1,6 @@
-package Book;
+package book;
+
+import service.ShippingService;
 
 public class PaperBook extends Book {
     private int stock;
@@ -13,6 +15,7 @@ public class PaperBook extends Book {
             throw new IllegalArgumentException("Out of stock");
         }
         stock -= quantity;
+        ShippingService.shipPaperBook(address, getTitle(), quantity);
         return getPrice() * quantity;
     }
 }

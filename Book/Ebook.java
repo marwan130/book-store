@@ -1,4 +1,6 @@
-package Book;
+package book;
+
+import service.MailService;
 
 public class Ebook extends Book {
     public Ebook(String ISBN, String title, int publishYear, double price) {
@@ -7,6 +9,7 @@ public class Ebook extends Book {
 
     @Override
     public double buy(String ISBN, int quantity, String email, String address) {
+        MailService.sendEbook(email, getTitle(), quantity);
         return getPrice() * quantity;
     }
 }

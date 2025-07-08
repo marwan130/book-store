@@ -1,0 +1,1 @@
+javac book/*.java main/*.java service/*.java store/*.java
