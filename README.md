@@ -4,5 +4,7 @@ to run using powershell
 - java main.Main
 
 the test class is the main class.
+
 Screenshots:
+![alt text](image-1.png)
 ![alt text](image.png)
