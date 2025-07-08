@@ -4,6 +4,7 @@
 - ./build.bat 
 - java main.Main
 
-the test class is the main class.
+## the test class is the main class.
 Screenshots:
+![alt text](image-2.png)
 ![alt text](image.png)
